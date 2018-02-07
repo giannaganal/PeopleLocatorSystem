@@ -1,0 +1,725 @@
+[EmployeeManager.employeeLogin 18:22:15,794]- INFO - START
+[EmployeeDAO.employeeLogin 18:22:15,794]- INFO - START
+[DAOUtil.connect 18:22:15,794]- INFO - START
+[DAOUtil.connect 18:22:16,033]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@4e515669
+[DAOUtil.connect 18:22:16,033]- INFO - END
+[EmployeeDAO.employeeLogin 18:22:16,033]- INFO - Query getting employee from username and password
+[EmployeeDAO.employeeLogin 18:22:16,033]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@73a8dfcc: SELECT * FROM plsdb.employee WHERE employee.username = 'abe.dalit' AND employee.password = 'password123'
+[EmployeeDAO.employeeLogin 18:22:16,033]- INFO - Created new employee!
+[EmployeeDAO.employeeLogin 18:22:16,033]- INFO - Employee ID: 160054
+[EmployeeDAO.employeeLogin 18:22:16,033]- INFO - Employee First Name: Abe James
+[EmployeeDAO.employeeLogin 18:22:16,033]- INFO - Employee Last Name: Dalit
+[EmployeeDAO.employeeLogin 18:22:16,048]- INFO - Employee Role: Manager
+[DAOUtil.closeConnection 18:22:16,048]- INFO - START
+[DAOUtil.closeConnection 18:22:16,048]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:16,048]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:16,048]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:16,048]- INFO - END
+[EmployeeDAO.employeeLogin 18:22:16,048]- INFO - END
+[EmployeeManager.employeeLogin 18:22:16,048]- INFO - logged in employee is: com.java.pointwest.beans.Employee@7fbe847c
+[EmployeeManager.employeeLogin 18:22:16,048]- INFO - END
+[Main.main 18:22:17,675]- INFO - User chose 2 in main menu.
+[SeatPlanManager.searchSeatPlanByLocationAndFloor 18:22:21,080]- INFO - START
+[SeatDAO.searchSeatPlanByLocationFloorLevel 18:22:21,080]- INFO - START
+[DAOUtil.connect 18:22:21,080]- INFO - START
+[DAOUtil.connect 18:22:21,095]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@6f2b958e
+[DAOUtil.connect 18:22:21,095]- INFO - END
+[SeatDAO.searchSeatPlanByLocationFloorLevel 18:22:21,095]- INFO - Query get seats by location and floor
+[SeatDAO.searchSeatPlanByLocationFloorLevel 18:22:21,095]- INFO - preparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@626b2d4a: SELECT * from plsdb.seat WHERE seat.bldg_id = 'PIC' AND seat.floor_number = 2 ORDER BY seat.quadrant ASC
+[SeatDAO.searchSeatPlanByLocationFloorLevel 18:22:21,095]- INFO - SeatPlan created! - com.java.pointwest.beans.SeatPlan@1c4af82c
+[SeatDAO.searchSeatPlanByLocationFloorLevel 18:22:21,095]- INFO - Seat created! - PIC2FA1-1
+[SeatDAO.searchSeatPlanByLocationFloorLevel 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - START
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FA1-2
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FA1-3
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FA2-1
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FA2-2
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FA2-3
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FA3-1
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FA3-2
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FA3-3
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FB1-1
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,095]- INFO - Seat created! - PIC2FB1-2
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FB1-3
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FB2-1
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FB2-2
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FB2-3
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FB3-1
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FB3-2
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FB3-3
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FC1-1
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FC1-2
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FC1-3
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FC2-1
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FC2-2
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FC2-3
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FC3-1
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FC3-2
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FC3-3
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FD1-1
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FD1-2
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FD1-3
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FD2-1
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FD2-2
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FD2-3
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FD3-1
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FD3-2
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Seat created! - PIC2FD3-3
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - Adding seat to seatplan...
+[SeatDAO.populateSeatPlan 18:22:21,111]- INFO - END
+[DAOUtil.closeConnection 18:22:21,111]- INFO - START
+[DAOUtil.closeConnection 18:22:21,111]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,111]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,111]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,111]- INFO - END
+[SeatDAO.searchSeatPlanByLocationFloorLevel 18:22:21,111]- INFO - END
+[SeatPlanManager.searchSeatPlanByLocationAndFloor 18:22:21,111]- INFO - SeatPlan to return: com.java.pointwest.beans.SeatPlan@1c4af82c
+[SeatPlanManager.searchSeatPlanByLocationAndFloor 18:22:21,111]- INFO - END
+[LocationManager.getAllLocations 18:22:21,111]- INFO - START
+[LocationDAO.retrieveAllLocations 18:22:21,111]- INFO - START
+[DAOUtil.connect 18:22:21,111]- INFO - START
+[DAOUtil.connect 18:22:21,127]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@e6ea0c6
+[DAOUtil.connect 18:22:21,127]- INFO - END
+[LocationDAO.retrieveAllLocations 18:22:21,127]- INFO - statement to execute: com.mysql.jdbc.StatementImpl@1c6b6478
+[LocationDAO.retrieveAllLocations 18:22:21,127]- INFO - HashMap of locations created: {}
+[LocationDAO.retrieveAllLocations 18:22:21,127]- INFO - location found! PIC, Quezon City
+[LocationDAO.retrieveAllLocations 18:22:21,127]- INFO - location adding to map...
+[LocationDAO.retrieveAllLocations 18:22:21,127]- INFO - location found! PLC, Ortigas
+[LocationDAO.retrieveAllLocations 18:22:21,127]- INFO - location adding to map...
+[LocationDAO.retrieveAllLocations 18:22:21,127]- INFO - location found! PTC, Makati City
+[LocationDAO.retrieveAllLocations 18:22:21,127]- INFO - location adding to map...
+[DAOUtil.closeConnection 18:22:21,127]- INFO - START
+[DAOUtil.closeConnection 18:22:21,142]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,142]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,142]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,142]- INFO - END
+[LocationDAO.retrieveAllLocations 18:22:21,142]- INFO - END
+[LocationManager.getAllLocations 18:22:21,142]- INFO - Map of locations to return: {PLC=Ortigas, PIC=Quezon City, PTC=Makati City}
+[LocationManager.getAllLocations 18:22:21,142]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,142]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,142]- INFO - START
+[DAOUtil.connect 18:22:21,142]- INFO - START
+[DAOUtil.connect 18:22:21,158]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@4c3e4790
+[DAOUtil.connect 18:22:21,158]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,158]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,158]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@19e1023e: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'A' AND seat.row_number = '1' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,158]- INFO - START
+[DAOUtil.closeConnection 18:22:21,158]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,158]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,158]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,158]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,158]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,158]- INFO - employee with seat PIC2FA1-1 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,158]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,158]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,158]- INFO - START
+[DAOUtil.connect 18:22:21,158]- INFO - START
+[DAOUtil.connect 18:22:21,173]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@198e2867
+[DAOUtil.connect 18:22:21,173]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,173]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,173]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@3419866c: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'A' AND seat.row_number = '1' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,173]- INFO - START
+[DAOUtil.closeConnection 18:22:21,173]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,173]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,173]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,173]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,173]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,173]- INFO - employee with seat PIC2FA1-2 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,173]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,173]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,173]- INFO - START
+[DAOUtil.connect 18:22:21,173]- INFO - START
+[DAOUtil.connect 18:22:21,189]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@51016012
+[DAOUtil.connect 18:22:21,189]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,189]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,189]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@4fccd51b: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'A' AND seat.row_number = '1' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,205]- INFO - START
+[DAOUtil.closeConnection 18:22:21,205]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,205]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,205]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,205]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,205]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,205]- INFO - employee with seat PIC2FA1-3 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,205]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,205]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,205]- INFO - START
+[DAOUtil.connect 18:22:21,205]- INFO - START
+[DAOUtil.connect 18:22:21,220]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@24273305
+[DAOUtil.connect 18:22:21,220]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,220]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,220]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@18e8568: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'A' AND seat.row_number = '2' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,220]- INFO - START
+[DAOUtil.closeConnection 18:22:21,220]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,220]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,220]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,220]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,220]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,220]- INFO - employee with seat PIC2FA2-1 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,220]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,220]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,220]- INFO - START
+[DAOUtil.connect 18:22:21,220]- INFO - START
+[DAOUtil.connect 18:22:21,236]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@2471cca7
+[DAOUtil.connect 18:22:21,236]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,236]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,236]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@5c0369c4: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'A' AND seat.row_number = '2' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,236]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,236]- INFO - Employee ID: 150315
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,236]- INFO - Employee First Name: Joy Ann
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,252]- INFO - Employee Last Name: Adriano
+[DAOUtil.closeConnection 18:22:21,252]- INFO - START
+[DAOUtil.closeConnection 18:22:21,252]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,252]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,252]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,252]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,252]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,252]- INFO - employee with seat PIC2FA2-2 is com.java.pointwest.beans.Employee@387c703b
+[EmployeeManager.searchEmployeeBySeat 18:22:21,252]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,252]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,252]- INFO - START
+[DAOUtil.connect 18:22:21,252]- INFO - START
+[DAOUtil.connect 18:22:21,267]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@282ba1e
+[DAOUtil.connect 18:22:21,267]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,267]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,267]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@64c64813: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'A' AND seat.row_number = '2' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,267]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,267]- INFO - Employee ID: 140216
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,267]- INFO - Employee First Name: Darwin Christian
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,267]- INFO - Employee Last Name: Asuncion
+[DAOUtil.closeConnection 18:22:21,267]- INFO - START
+[DAOUtil.closeConnection 18:22:21,267]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,267]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,267]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,267]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,267]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,267]- INFO - employee with seat PIC2FA2-3 is com.java.pointwest.beans.Employee@591f989e
+[EmployeeManager.searchEmployeeBySeat 18:22:21,267]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,267]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,267]- INFO - START
+[DAOUtil.connect 18:22:21,267]- INFO - START
+[DAOUtil.connect 18:22:21,283]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@33a10788
+[DAOUtil.connect 18:22:21,283]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,283]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,283]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@7cdbc5d3: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'A' AND seat.row_number = '3' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,283]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,283]- INFO - Employee ID: 140866
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,283]- INFO - Employee First Name: Hannah Jill
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,283]- INFO - Employee Last Name: Ney
+[DAOUtil.closeConnection 18:22:21,283]- INFO - START
+[DAOUtil.closeConnection 18:22:21,283]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,283]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,283]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,283]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,283]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,283]- INFO - employee with seat PIC2FA3-1 is com.java.pointwest.beans.Employee@721e0f4f
+[EmployeeManager.searchEmployeeBySeat 18:22:21,283]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,283]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,283]- INFO - START
+[DAOUtil.connect 18:22:21,283]- INFO - START
+[DAOUtil.connect 18:22:21,298]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@1888ff2c
+[DAOUtil.connect 18:22:21,298]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,314]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,314]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@357246de: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'A' AND seat.row_number = '3' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,314]- INFO - START
+[DAOUtil.closeConnection 18:22:21,314]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,314]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,314]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,314]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,314]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,314]- INFO - employee with seat PIC2FA3-2 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,314]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,314]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,314]- INFO - START
+[DAOUtil.connect 18:22:21,314]- INFO - START
+[DAOUtil.connect 18:22:21,330]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@11531931
+[DAOUtil.connect 18:22:21,330]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,330]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,330]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@4cdbe50f: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'A' AND seat.row_number = '3' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,330]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,330]- INFO - Employee ID: 131016
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,330]- INFO - Employee First Name: Nikko
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,330]- INFO - Employee Last Name: Ocampo
+[DAOUtil.closeConnection 18:22:21,330]- INFO - START
+[DAOUtil.closeConnection 18:22:21,330]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,330]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,330]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,330]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,330]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,330]- INFO - employee with seat PIC2FA3-3 is com.java.pointwest.beans.Employee@2c8d66b2
+[EmployeeManager.searchEmployeeBySeat 18:22:21,330]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,330]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,330]- INFO - START
+[DAOUtil.connect 18:22:21,330]- INFO - START
+[DAOUtil.connect 18:22:21,348]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@2f7c7260
+[DAOUtil.connect 18:22:21,348]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,348]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,348]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@2752f6e2: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'B' AND seat.row_number = '1' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,348]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,348]- INFO - Employee ID: 130117
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,348]- INFO - Employee First Name: Von Albert
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,348]- INFO - Employee Last Name: Bandoja
+[DAOUtil.closeConnection 18:22:21,348]- INFO - START
+[DAOUtil.closeConnection 18:22:21,348]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,348]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,348]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,348]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,348]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,348]- INFO - employee with seat PIC2FB1-1 is com.java.pointwest.beans.Employee@3ac3fd8b
+[EmployeeManager.searchEmployeeBySeat 18:22:21,348]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,348]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,348]- INFO - START
+[DAOUtil.connect 18:22:21,348]- INFO - START
+[DAOUtil.connect 18:22:21,364]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@b684286
+[DAOUtil.connect 18:22:21,364]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,364]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,364]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@36d64342: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'B' AND seat.row_number = '1' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,379]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,379]- INFO - Employee ID: 120018
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,379]- INFO - Employee First Name: Herbert
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,379]- INFO - Employee Last Name: Beramo
+[DAOUtil.closeConnection 18:22:21,379]- INFO - START
+[DAOUtil.closeConnection 18:22:21,379]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,379]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,379]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,379]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,379]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,379]- INFO - employee with seat PIC2FB1-2 is com.java.pointwest.beans.Employee@71be98f5
+[EmployeeManager.searchEmployeeBySeat 18:22:21,379]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,379]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,379]- INFO - START
+[DAOUtil.connect 18:22:21,379]- INFO - START
+[DAOUtil.connect 18:22:21,395]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@3796751b
+[DAOUtil.connect 18:22:21,395]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,395]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,395]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@60f82f98: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'B' AND seat.row_number = '1' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,395]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,395]- INFO - Employee ID: 121166
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,395]- INFO - Employee First Name: Aime Anne
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,395]- INFO - Employee Last Name: Resubal
+[DAOUtil.closeConnection 18:22:21,395]- INFO - START
+[DAOUtil.closeConnection 18:22:21,395]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,395]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,395]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,395]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,395]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,395]- INFO - employee with seat PIC2FB1-3 is com.java.pointwest.beans.Employee@3498ed
+[EmployeeManager.searchEmployeeBySeat 18:22:21,395]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,395]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,395]- INFO - START
+[DAOUtil.connect 18:22:21,395]- INFO - START
+[DAOUtil.connect 18:22:21,411]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@6b2fad11
+[DAOUtil.connect 18:22:21,411]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,411]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,411]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@38082d64: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'B' AND seat.row_number = '2' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,411]- INFO - START
+[DAOUtil.closeConnection 18:22:21,411]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,411]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,411]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,411]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,411]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,411]- INFO - employee with seat PIC2FB2-1 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,411]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,411]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,411]- INFO - START
+[DAOUtil.connect 18:22:21,411]- INFO - START
+[DAOUtil.connect 18:22:21,426]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@62043840
+[DAOUtil.connect 18:22:21,442]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,442]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,442]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@60addb54: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'B' AND seat.row_number = '2' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,442]- INFO - START
+[DAOUtil.closeConnection 18:22:21,442]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,442]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,442]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,442]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,442]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,442]- INFO - employee with seat PIC2FB2-2 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,442]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,442]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,442]- INFO - START
+[DAOUtil.connect 18:22:21,442]- INFO - START
+[DAOUtil.connect 18:22:21,457]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@1936f0f5
+[DAOUtil.connect 18:22:21,457]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,457]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,457]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@2d3fcdbd: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'B' AND seat.row_number = '2' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,457]- INFO - START
+[DAOUtil.closeConnection 18:22:21,457]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,457]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,457]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,457]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,457]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,457]- INFO - employee with seat PIC2FB2-3 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,457]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,457]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,457]- INFO - START
+[DAOUtil.connect 18:22:21,457]- INFO - START
+[DAOUtil.connect 18:22:21,473]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@735b478
+[DAOUtil.connect 18:22:21,473]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,473]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,473]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@234bef66: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'B' AND seat.row_number = '3' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,473]- INFO - START
+[DAOUtil.closeConnection 18:22:21,473]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,473]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,473]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,473]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,473]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,473]- INFO - employee with seat PIC2FB3-1 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,473]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,473]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,473]- INFO - START
+[DAOUtil.connect 18:22:21,473]- INFO - START
+[DAOUtil.connect 18:22:21,489]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@59e84876
+[DAOUtil.connect 18:22:21,489]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,489]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,489]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@7946e1f4: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'B' AND seat.row_number = '3' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,504]- INFO - START
+[DAOUtil.closeConnection 18:22:21,504]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,504]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,504]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,504]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,504]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,504]- INFO - employee with seat PIC2FB3-2 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,504]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,504]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,504]- INFO - START
+[DAOUtil.connect 18:22:21,504]- INFO - START
+[DAOUtil.connect 18:22:21,520]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@66d2e7d9
+[DAOUtil.connect 18:22:21,520]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,520]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,520]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@3c756e4d: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'B' AND seat.row_number = '3' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,520]- INFO - START
+[DAOUtil.closeConnection 18:22:21,520]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,520]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,520]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,520]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,520]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,520]- INFO - employee with seat PIC2FB3-3 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,520]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,520]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,520]- INFO - START
+[DAOUtil.connect 18:22:21,520]- INFO - START
+[DAOUtil.connect 18:22:21,536]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@5dfcfece
+[DAOUtil.connect 18:22:21,536]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,536]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,536]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@6cc4c815: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'C' AND seat.row_number = '1' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,536]- INFO - START
+[DAOUtil.closeConnection 18:22:21,536]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,536]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,536]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,536]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,536]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,536]- INFO - employee with seat PIC2FC1-1 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,536]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,536]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,536]- INFO - START
+[DAOUtil.connect 18:22:21,536]- INFO - START
+[DAOUtil.connect 18:22:21,551]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@4520ebad
+[DAOUtil.connect 18:22:21,551]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,551]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,551]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@4f933fd1: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'C' AND seat.row_number = '1' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,551]- INFO - START
+[DAOUtil.closeConnection 18:22:21,551]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,551]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,551]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,551]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,551]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,551]- INFO - employee with seat PIC2FC1-2 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,551]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,551]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,551]- INFO - START
+[DAOUtil.connect 18:22:21,551]- INFO - START
+[DAOUtil.connect 18:22:21,567]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@457e2f02
+[DAOUtil.connect 18:22:21,567]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,567]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,582]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@4678c730: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'C' AND seat.row_number = '1' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,582]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,582]- INFO - Employee ID: 109919
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,582]- INFO - Employee First Name: Dexter John
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,582]- INFO - Employee Last Name: Bobis
+[DAOUtil.closeConnection 18:22:21,582]- INFO - START
+[DAOUtil.closeConnection 18:22:21,582]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,582]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,582]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,582]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,582]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,582]- INFO - employee with seat PIC2FC1-3 is com.java.pointwest.beans.Employee@26be92ad
+[EmployeeManager.searchEmployeeBySeat 18:22:21,582]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,582]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,582]- INFO - START
+[DAOUtil.connect 18:22:21,582]- INFO - START
+[DAOUtil.connect 18:22:21,598]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@4501b7af
+[DAOUtil.connect 18:22:21,598]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,598]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,598]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@29774679: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'C' AND seat.row_number = '2' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,598]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,598]- INFO - Employee ID: 111316
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,598]- INFO - Employee First Name: Benji
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,598]- INFO - Employee Last Name: Rinion
+[DAOUtil.closeConnection 18:22:21,598]- INFO - START
+[DAOUtil.closeConnection 18:22:21,598]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,598]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,598]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,598]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,598]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,598]- INFO - employee with seat PIC2FC2-1 is com.java.pointwest.beans.Employee@77caeb3e
+[EmployeeManager.searchEmployeeBySeat 18:22:21,598]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,598]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,598]- INFO - START
+[DAOUtil.connect 18:22:21,598]- INFO - START
+[DAOUtil.connect 18:22:21,621]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@604ed9f0
+[DAOUtil.connect 18:22:21,621]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,621]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,621]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@7cd62f43: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'C' AND seat.row_number = '2' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,625]- INFO - START
+[DAOUtil.closeConnection 18:22:21,625]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,625]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,625]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,625]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,625]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,625]- INFO - employee with seat PIC2FC2-2 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,625]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,626]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,626]- INFO - START
+[DAOUtil.connect 18:22:21,626]- INFO - START
+[DAOUtil.connect 18:22:21,641]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@77cd7a0
+[DAOUtil.connect 18:22:21,641]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,641]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,641]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@146ba0ac: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'C' AND seat.row_number = '2' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,645]- INFO - START
+[DAOUtil.closeConnection 18:22:21,645]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,645]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,645]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,645]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,645]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,645]- INFO - employee with seat PIC2FC2-3 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,645]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,645]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,645]- INFO - START
+[DAOUtil.connect 18:22:21,646]- INFO - START
+[DAOUtil.connect 18:22:21,647]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@271053e1
+[DAOUtil.connect 18:22:21,647]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,647]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,647]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@402a079c: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'C' AND seat.row_number = '3' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,663]- INFO - START
+[DAOUtil.closeConnection 18:22:21,663]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,663]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,663]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,663]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,663]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,663]- INFO - employee with seat PIC2FC3-1 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,663]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,663]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,663]- INFO - START
+[DAOUtil.connect 18:22:21,663]- INFO - START
+[DAOUtil.connect 18:22:21,679]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@490ab905
+[DAOUtil.connect 18:22:21,679]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,679]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,679]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@6e06451e: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'C' AND seat.row_number = '3' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,679]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,679]- INFO - Employee ID: 150416
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,679]- INFO - Employee First Name: Mark Jason
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,679]- INFO - Employee Last Name: Bongalos
+[DAOUtil.closeConnection 18:22:21,679]- INFO - START
+[DAOUtil.closeConnection 18:22:21,679]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,679]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,679]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,679]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,679]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,679]- INFO - employee with seat PIC2FC3-2 is com.java.pointwest.beans.Employee@4b952a2d
+[EmployeeManager.searchEmployeeBySeat 18:22:21,679]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,679]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,679]- INFO - START
+[DAOUtil.connect 18:22:21,679]- INFO - START
+[DAOUtil.connect 18:22:21,694]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@5025a98f
+[DAOUtil.connect 18:22:21,694]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,694]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,694]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@64bfbc86: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'C' AND seat.row_number = '3' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,694]- INFO - START
+[DAOUtil.closeConnection 18:22:21,694]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,694]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,694]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,694]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,694]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,694]- INFO - employee with seat PIC2FC3-3 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,694]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,694]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,694]- INFO - START
+[DAOUtil.connect 18:22:21,694]- INFO - START
+[DAOUtil.connect 18:22:21,710]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@71318ec4
+[DAOUtil.connect 18:22:21,710]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,710]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,710]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@4e1d422d: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'D' AND seat.row_number = '1' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,725]- INFO - START
+[DAOUtil.closeConnection 18:22:21,725]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,725]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,725]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,725]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,725]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,725]- INFO - employee with seat PIC2FD1-1 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,725]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,725]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,725]- INFO - START
+[DAOUtil.connect 18:22:21,725]- INFO - START
+[DAOUtil.connect 18:22:21,741]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@4e9ba398
+[DAOUtil.connect 18:22:21,741]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,741]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,741]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@3108bc: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'D' AND seat.row_number = '1' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,741]- INFO - START
+[DAOUtil.closeConnection 18:22:21,741]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,741]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,741]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,741]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,741]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,741]- INFO - employee with seat PIC2FD1-2 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,741]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,741]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,741]- INFO - START
+[DAOUtil.connect 18:22:21,741]- INFO - START
+[DAOUtil.connect 18:22:21,757]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@2b2948e2
+[DAOUtil.connect 18:22:21,757]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,757]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,757]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@5a8e6209: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'D' AND seat.row_number = '1' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,757]- INFO - START
+[DAOUtil.closeConnection 18:22:21,757]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,757]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,757]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,757]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,757]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,757]- INFO - employee with seat PIC2FD1-3 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,757]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,757]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,757]- INFO - START
+[DAOUtil.connect 18:22:21,757]- INFO - START
+[DAOUtil.connect 18:22:21,772]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@887af79
+[DAOUtil.connect 18:22:21,772]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,772]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,772]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@5bc79255: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'D' AND seat.row_number = '2' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,772]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,772]- INFO - Employee ID: 140316
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,772]- INFO - Employee First Name: Molly
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,772]- INFO - Employee Last Name: Bonzon
+[DAOUtil.closeConnection 18:22:21,772]- INFO - START
+[DAOUtil.closeConnection 18:22:21,772]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,788]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,788]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,788]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,788]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,788]- INFO - employee with seat PIC2FD2-1 is com.java.pointwest.beans.Employee@578486a3
+[EmployeeManager.searchEmployeeBySeat 18:22:21,788]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,788]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,788]- INFO - START
+[DAOUtil.connect 18:22:21,788]- INFO - START
+[DAOUtil.connect 18:22:21,804]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@32709393
+[DAOUtil.connect 18:22:21,804]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,804]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,804]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@3a883ce7: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'D' AND seat.row_number = '2' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,804]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,804]- INFO - Employee ID: 101466
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,804]- INFO - Employee First Name: Rejie Ann
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,804]- INFO - Employee Last Name: Supsupin
+[DAOUtil.closeConnection 18:22:21,804]- INFO - START
+[DAOUtil.closeConnection 18:22:21,804]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,804]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,804]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,804]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,804]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,804]- INFO - employee with seat PIC2FD2-2 is com.java.pointwest.beans.Employee@68bbe345
+[EmployeeManager.searchEmployeeBySeat 18:22:21,804]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,804]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,804]- INFO - START
+[DAOUtil.connect 18:22:21,804]- INFO - START
+[DAOUtil.connect 18:22:21,819]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@5e853265
+[DAOUtil.connect 18:22:21,819]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,819]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,819]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@2a17b7b6: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'D' AND seat.row_number = '2' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,819]- INFO - Created new employee!
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,819]- INFO - Employee ID: 130216
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,819]- INFO - Employee First Name: Maria Jasmin
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,819]- INFO - Employee Last Name: Cabajar
+[DAOUtil.closeConnection 18:22:21,819]- INFO - START
+[DAOUtil.closeConnection 18:22:21,819]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,819]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,819]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,819]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,819]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,819]- INFO - employee with seat PIC2FD2-3 is com.java.pointwest.beans.Employee@7f13d6e
+[EmployeeManager.searchEmployeeBySeat 18:22:21,819]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,819]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,819]- INFO - START
+[DAOUtil.connect 18:22:21,819]- INFO - START
+[DAOUtil.connect 18:22:21,835]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@48503868
+[DAOUtil.connect 18:22:21,835]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,835]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,835]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@1f7030a6: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'D' AND seat.row_number = '3' AND seat.column_number = '1' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,850]- INFO - START
+[DAOUtil.closeConnection 18:22:21,850]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,850]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,850]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,850]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,850]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,850]- INFO - employee with seat PIC2FD3-1 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,850]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,850]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,850]- INFO - START
+[DAOUtil.connect 18:22:21,850]- INFO - START
+[DAOUtil.connect 18:22:21,866]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@4b1c1ea0
+[DAOUtil.connect 18:22:21,866]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,866]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,866]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@2833cc44: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'D' AND seat.row_number = '3' AND seat.column_number = '2' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,866]- INFO - START
+[DAOUtil.closeConnection 18:22:21,866]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,866]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,866]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,866]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,866]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,866]- INFO - employee with seat PIC2FD3-2 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,866]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,866]- INFO - START
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,866]- INFO - START
+[DAOUtil.connect 18:22:21,866]- INFO - START
+[DAOUtil.connect 18:22:21,882]- INFO - Connection is: com.mysql.jdbc.JDBC4Connection@4232c52b
+[DAOUtil.connect 18:22:21,882]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,882]- INFO - Query get employee using seat location
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,882]- INFO - PreparedStatement to execute: com.mysql.jdbc.JDBC42PreparedStatement@11438d26: SELECT employee_seat.emp_id, employee.first_name, employee.last_name, employee.username FROM plsdb.employee_seat JOIN seat ON employee_seat.seat_id = seat.seat_id JOIN employee ON employee_seat.emp_id = employee.emp_id WHERE seat.bldg_id = 'PIC' AND seat.floor_number = '2' AND seat.quadrant = 'D' AND seat.row_number = '3' AND seat.column_number = '3' ORDER BY employee_seat.emp_id ASC
+[DAOUtil.closeConnection 18:22:21,882]- INFO - START
+[DAOUtil.closeConnection 18:22:21,882]- INFO - connection closed
+[DAOUtil.closeConnection 18:22:21,882]- INFO - ResultSet closed
+[DAOUtil.closeConnection 18:22:21,882]- INFO - statement closed
+[DAOUtil.closeConnection 18:22:21,882]- INFO - END
+[EmployeeDAO.searchEmployeeBySeat 18:22:21,882]- INFO - END
+[EmployeeManager.searchEmployeeBySeat 18:22:21,882]- INFO - employee with seat PIC2FD3-3 is null
+[EmployeeManager.searchEmployeeBySeat 18:22:21,882]- INFO - END
+[Main.main 18:22:55,945]- INFO - User chose 3 in main menu.
